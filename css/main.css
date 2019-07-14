@@ -1,0 +1,283 @@
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* global style */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    height: 8000px;
+
+}
+
+
+
+.green {
+    color: rgb(27, 226, 166)
+}
+
+.greenBg {
+    background-color: rgb(27, 226, 166) !important;
+    color: #fff !important;
+}
+
+
+
+
+/*-------------------------------------*/
+/* HEADER */
+/*-------------------------------------*/
+header {
+    position: relative;
+}
+
+
+/*-------------------------------------*/
+/* TOP CONTACT */
+/*-------------------------------------*/
+section.contact .logo{
+    width: 30%;
+    float: left
+    
+    
+}
+
+section.contact div.contact-ways{
+    float: right;
+    width: 70%;
+    text-align: right
+}
+section.contact .top-contact-box div.toggle{
+        float: right;
+/*    display: none*/
+
+}
+section.contact .top-contact-box{
+    overflow: hidden;
+   
+}
+
+section.contact div.contact-ways {
+    height:50px;
+}
+section.contact div.contact-ways a{
+    line-height: 50px;
+    padding-left: 15px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #000
+}
+section.contact .logo{
+    height:50px;
+}
+section.contact .logo h2{
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+/*-------------------------------------*/
+/* NAV PART */
+/*-------------------------------------*/
+header{
+    position: relative;
+    background-color: rgb(27, 226, 166);
+}
+header div.forPoz{
+/*        height: 50px;*/
+
+}
+header ul li{
+    list-style: none
+}
+section div.nav-box{
+    overflow: hidden;
+    height: auto;
+    padding: 0;
+        height: 50px
+
+
+    
+}
+
+header section div.nav-box ul{
+    display: flex;
+    padding: 0
+}
+header section div.nav-box ul li a{
+    display: block;
+    line-height: 50px;
+    color: #fff;
+}
+header section div.nav-box ul li a:hover{
+    background-color: rgba(18, 196, 128, 0.68);
+    transition: all .8s ease;
+    color: #000;
+    text-shadow: 0 0 2px #444;
+}
+header section div.nav-box ul li:first-of-type{
+    border-left: 1px solid #fff
+}
+header section div.nav-box div.form-search input[type=text]{
+    display: inline-block;
+    height: 30px;
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    
+}
+
+
+
+
+
+
+/*-------------------------------------*/
+/* NAV PART  -- mobile version*/
+/*-------------------------------------*/
+
+@media screen and (max-width:768px) {
+    section .logo{
+        width: 80%;
+    }
+    section .logo{
+        width: 80%;
+    }
+    section .contact-ways{
+        display: none
+    }
+    header section div.nav-box ul li a
+    {
+            padding: 0 15px;
+        text-decoration: none
+
+    }
+    
+    section .toggle{
+        display: block
+    }
+    section .toggle .fa-bars{
+        line-height: 60px;
+        font-size: 30px
+    }
+    header{
+        position: relative;
+        padding-bottom: 50px;
+        height: 90vh
+    }
+    section .nav-part{
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+    .nav-part div.nav-box nav ul {
+        flex-direction: column;
+        text-align: center
+        
+    }
+    .nav-part div.nav-box{
+        
+    }
+    section div.nav-box{
+                height: auto;
+
+    }
+    section div.nav-box nav{
+        width: 100%;
+        float: none;
+    }
+    section div.nav-box div.form-search{
+        width: 60%;
+        margin: 0 20%;
+        float: none;
+    }
+    .fade{
+        display: none
+    }
+    
+}
+
+@media screen and (min-width:769px) {
+    section .toggle{
+        display: none
+    }
+    header section div.nav-box ul li a{
+            padding: 0 15px;
+
+    }
+    header section div.nav-box nav{
+    float: left;
+    width: 60%;
+}
+header section div.nav-box div.form-search{
+        width: 30%;
+
+    float: right;
+    text-align: right;
+}
+}
+
+/*-------------------------------------*/
+/* slider PART */
+/*-------------------------------------*/
+.slides {
+    color: #fff;
+    position: relative;
+}
+
+.slides h1 {
+    width: 400px;
+    margin-top: -100px;
+    text-transform: capitalize;
+    text-shadow: 0 0 2px #fff;
+}
+
+.slides p {
+    line-height: 2.2em;
+    text-shadow: 0 0 2px #fff;
+    margin: 20px 0;
+
+}
+
+.img {
+    background-image: linear-gradient(80deg, rgba(85, 92, 95, 0.47), rgba(242, 251, 255, 0.62)), url('../img/slide.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slide-box {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+
+
+.slides p {
+    width: 500px
+}
+
+
+.btn-success {
+    width: 150px;
+}
+
+/*-------------------------------------*/
+/* slide PART  -- mobile version*/
+/*-------------------------------------*/
+
+
+@media screen and (max-width:798px) {
+    .img {
+        background-position: top center
+    }
+
+    main .moveTp {
+        margin-top: -90vh
+    }
+}
