@@ -22,7 +22,11 @@ body {
 
 .greenBg {
     background-color: rgb(27, 226, 166) !important;
-    color: #fff !important;
+    color: #fff ;
+}
+a.greenBg:hover, input.greenBg:hover{
+        box-shadow: 0 0 8px 9px rgb(118, 232, 217);
+    text-shadow:  0 0 2px #555
 }
 
 
@@ -50,6 +54,14 @@ section.contact div.contact-ways{
     float: right;
     width: 70%;
     text-align: right
+}
+section.contact div.contact-ways .fa-phone{
+    font-size: 25px;
+    border: 1px solid #bbb;
+    border-radius: 50%;
+    background-color: rgb(27, 226, 166);
+    color: #fff;
+    padding: 2px
 }
 section.contact .top-contact-box div.toggle{
         float: right;
@@ -117,9 +129,10 @@ header section div.nav-box ul li a:hover{
     transition: all .8s ease;
     color: #000;
     text-shadow: 0 0 2px #444;
+    text-decoration: none
 }
 header section div.nav-box ul li:first-of-type{
-    border-left: 1px solid #fff
+/*    border-left: 1px solid #fff*/
 }
 header section div.nav-box div.form-search input[type=text]{
     display: inline-block;
@@ -242,7 +255,7 @@ li.slides h1 {
 }
 
 .slides p.resposive-p {
-    width:400px;
+    max-width: 400px;
     line-height: 2.2em;
     text-shadow: 0 0 2px #aaa;
     margin: 20px 0;
@@ -268,9 +281,11 @@ li.slides h1 {
 
 
 
+/*
 .slides p {
     width: 500px
 }
+*/
 
 
 .btn-success {
@@ -387,7 +402,8 @@ section div.container-boxes .boxs{
     background-color: rgba(229, 236, 229, 0.4);
     padding-bottom: 20px;
     border-radius: 5px;
-    box-shadow: 0 3px 8px 1px #aaa
+    box-shadow: 0 3px 8px 1px #aaa;
+    margin-bottom: 30px
 }
 /*
 section div.container-boxes .boxs:last-child{
@@ -440,5 +456,39 @@ section div.box-fild *{
 section div.box-fild input , section div.box-fild select{
     border:1px solid #aaa;
 }
+
+
+
+/*-------------------------------------*/
+/* DARK BOX */
+/*-------------------------------------*/
+#dark-section{
+    min-height: 200px;
+    background-image: url('../img/laptopbg.jpg');
+    background-position: 100px center;
+    color: #fff
+}
+section div.dark-box{
+    display: flex;
+}
+section div.box-txt , section .dark-box-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+/*        border: 1px solid red;*/
+    height: 200px;
+    padding:  0 10px
+
+}
+section div.box-txt h4{
+/*    border: 1px solid red;*/
+    text-transform: capitalize;
+}
+section div.box-txt p{
+/*    border: 1px solid red;*/
+    font-size: 12px
+}
+
+
 
 
