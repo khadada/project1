@@ -10,7 +10,6 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    height: 8000px;
 
 }
 
@@ -22,11 +21,13 @@ body {
 
 .greenBg {
     background-color: rgb(27, 226, 166) !important;
-    color: #fff ;
+    color: #fff;
 }
-a.greenBg:hover, input.greenBg:hover{
-        box-shadow: 0 0 8px 9px rgb(118, 232, 217);
-    text-shadow:  0 0 2px #555
+
+a.greenBg:hover,
+input.greenBg:hover {
+    box-shadow: 0 0 8px 9px rgb(118, 232, 217);
+    text-shadow: 0 0 2px #555
 }
 
 
@@ -43,19 +44,18 @@ header {
 /*-------------------------------------*/
 /* TOP CONTACT */
 /*-------------------------------------*/
-section.contact .logo{
+section.contact .logo {
     width: 30%;
     float: left
-    
-    
 }
 
-section.contact div.contact-ways{
+section.contact div.contact-ways {
     float: right;
     width: 70%;
     text-align: right
 }
-section.contact div.contact-ways .fa-phone{
+
+section.contact div.contact-ways .fa-phone {
     font-size: 25px;
     border: 1px solid #bbb;
     border-radius: 50%;
@@ -63,30 +63,35 @@ section.contact div.contact-ways .fa-phone{
     color: #fff;
     padding: 2px
 }
-section.contact .top-contact-box div.toggle{
-        float: right;
-/*    display: none*/
+
+section.contact .top-contact-box div.toggle {
+    float: right;
+    /*    display: none*/
 
 }
-section.contact .top-contact-box{
+
+section.contact .top-contact-box {
     overflow: hidden;
-   
+
 }
 
 section.contact div.contact-ways {
-    height:50px;
+    height: 50px;
 }
-section.contact div.contact-ways a{
+
+section.contact div.contact-ways a {
     line-height: 50px;
     padding-left: 15px;
     text-transform: capitalize;
     text-decoration: none;
     color: #000
 }
-section.contact .logo{
-    height:50px;
+
+section.contact .logo {
+    height: 50px;
 }
-section.contact .logo h2{
+
+section.contact .logo h2 {
     line-height: 50px;
     text-transform: uppercase;
 }
@@ -94,53 +99,57 @@ section.contact .logo h2{
 /*-------------------------------------*/
 /* NAV PART */
 /*-------------------------------------*/
-header{
+header {
     position: relative;
     background-color: rgb(27, 226, 166);
 }
-header div.forPoz{
-/*        height: 50px;*/
+
+header div.forPoz {
+    /*        height: 50px;*/
 
 }
-header ul li{
+
+header ul li {
     list-style: none
 }
-section div.nav-box{
+
+section div.nav-box {
     overflow: hidden;
     height: auto;
     padding: 0;
-        height: 50px
-
-
-    
+/*    height: 50px*/
 }
 
-header section div.nav-box ul{
+header section div.nav-box ul {
     display: flex;
     padding: 0
 }
-header section div.nav-box ul li a{
+
+header section div.nav-box ul li a {
     display: block;
     line-height: 50px;
     color: #fff;
 }
-header section div.nav-box ul li a:hover{
+
+header section div.nav-box ul li a:hover {
     background-color: rgba(18, 196, 128, 0.68);
     transition: all .8s ease;
     color: #000;
     text-shadow: 0 0 2px #444;
     text-decoration: none
 }
-header section div.nav-box ul li:first-of-type{
-/*    border-left: 1px solid #fff*/
+
+header section div.nav-box ul li:first-of-type {
+    /*    border-left: 1px solid #fff*/
 }
-header section div.nav-box div.form-search input[type=text]{
+
+header section div.nav-box div.form-search input[type=text] {
     display: inline-block;
     height: 30px;
     margin-top: 10px;
     position: relative;
     width: 100%;
-    
+
 }
 
 
@@ -153,84 +162,103 @@ header section div.nav-box div.form-search input[type=text]{
 /*-------------------------------------*/
 
 @media screen and (max-width:768px) {
-    section .logo{
+    section .logo {
         width: 80%;
     }
-    section .logo{
+
+    section .logo {
         width: 80%;
     }
-    section .contact-ways{
+
+    section .contact-ways {
         display: none
     }
-    header section div.nav-box ul li a
-    {
-            padding: 0 15px;
-        text-decoration: none
 
+    header section div.nav-box ul li a {
+        padding: 0 15px;
+        text-decoration: none
     }
-    
-    section .toggle{
+
+    section .toggle {
         display: block
     }
-    section .toggle .fa-bars{
+
+    section .toggle .fa-bars {
         line-height: 60px;
         font-size: 30px
     }
-    header{
+
+    header {
         position: relative;
         padding-bottom: 50px;
-        height: 90vh
+        height: 90vh;
+        transition: all .5s ease
     }
-    section .nav-part{
+
+/*
+    header.fade {
+        height: 90vh;
+        transition: all .5s ease
+    }
+*/
+    
+
+    section .nav-part {
         position: absolute;
         top: 100%;
         left: 0;
     }
+
     .nav-part div.nav-box nav ul {
         flex-direction: column;
         text-align: center
-        
     }
-    .nav-part div.nav-box{
-        
-    }
-    section div.nav-box{
-                height: auto;
+
+    .nav-part div.nav-box {}
+
+    section div.nav-box {
+        height: auto;
 
     }
-    section div.nav-box nav{
+
+    section div.nav-box nav {
         width: 100%;
         float: none;
     }
-    section div.nav-box div.form-search{
+
+    section div.nav-box div.form-search {
         width: 60%;
         margin: 0 20%;
         float: none;
     }
-    .fade{
+
+    .fade {
         display: none
     }
-    
+
 }
 
 @media screen and (min-width:769px) {
-    section .toggle{
+    section .toggle {
         display: none
     }
-    header section div.nav-box ul li a{
-            padding: 0 15px;
+
+    header section div.nav-box ul li a {
+        padding: 0 15px;
 
     }
-    header section div.nav-box nav{
-    float: left;
-    width: 60%;
-}
-header section div.nav-box div.form-search{
+
+    header section div.nav-box nav {
+        float: left;
+        width: 60%;
+    }
+
+    header section div.nav-box div.form-search {
         width: 30%;
 
-    float: right;
-    text-align: right;
-}
+        float: right;
+        text-align: right;
+    }
 }
 
 /*-------------------------------------*/
@@ -240,10 +268,11 @@ header section div.nav-box div.form-search{
     color: #fff;
 
 }
-main#slide ul{
+
+main#slide ul {
     padding: 0;
     margin: 0;
-        position: relative;
+    position: relative;
 
 }
 
@@ -335,50 +364,61 @@ li.slides h1 {
 
 
 /*---------------------------------------------*/
-    /*consultation + emergency + apponttement*/
+/*consultation + emergency + apponttement*/
 /*--------------------------------------------*/
 
 
-section#appoittement{
-/*        overflow: hidden;*/
-    }
-section#appoittement form{
-    
+section#appoittement {
+    /*        overflow: hidden;*/
+
+}
+
+section#appoittement form {
+
     height: auto
+}
+
+.box-text p {
+    color: #666;
+    line-height: 1.84
 }
 
 /*mobile version */
 @media screen and (max-width:768px) {
-    
 
 
-    section#appoittement div.container-boxes{
+
+    section#appoittement div.container-boxes {
         flex-direction: column;
         flex-basis: 100%;
     }
-    section#appoittement div.container-boxes .boxs{
+
+    section#appoittement div.container-boxes .boxs {
         margin-bottom: 20px;
     }
 
 
-    
+
 }
-@media screen and (max-width:996px){
-    section#appoittement div.container-boxes{
+
+@media screen and (max-width:996px) {
+    section#appoittement div.container-boxes {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
-    section#appoittement div.container-boxes .boxs:first-child{
-        flex:1;
+
+    section#appoittement div.container-boxes .boxs:first-child {
+        flex: 1;
     }
-    section#appoittement div.container-boxes .boxs:nth-child(2){
-        flex:1;
+
+    section#appoittement div.container-boxes .boxs:nth-child(2) {
+        flex: 1;
 
     }
 
-    section#appoittement div.container-boxes .boxs:nth-child(3){
-        flex:1;
+    section#appoittement div.container-boxes .boxs:nth-child(3) {
+        flex: 1;
 
     }
 
@@ -387,16 +427,18 @@ section#appoittement form{
 
 
 
-section#appoittement{
+section#appoittement {
     padding: 100px 0;
     font-size: .9em
 }
-section div.container-boxes{
+
+section div.container-boxes {
     display: flex;
-        justify-content: space-between;
+    justify-content: space-between;
 
 }
-section div.container-boxes .boxs{
+
+section div.container-boxes .boxs {
     flex-basis: 30%;
     height: 500px;
     background-color: rgba(229, 236, 229, 0.4);
@@ -405,26 +447,30 @@ section div.container-boxes .boxs{
     box-shadow: 0 3px 8px 1px #aaa;
     margin-bottom: 30px
 }
+
 /*
 section div.container-boxes .boxs:last-child{
     background-color: hsla(0, 0%, 42%, 0.33);
 }
 */
 
-section div.container-boxes .boxs img{
+section div.container-boxes .boxs img {
     width: 100%;
     height: 250px;
-        border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
 
-    
+
 }
-section div.box-text{
+
+section div.box-text {
     padding: 10px 20px
 }
-section div.box-text h2{
+
+section div.box-text h2 {
     text-transform: capitalize;
 }
-section div.box-text p{
+
+section div.box-text p {
     text-align: left;
 }
 
@@ -433,12 +479,13 @@ section div.box-text p{
 
 
 
-section div.appointement h3{
+section div.appointement h3 {
     text-align: center;
     padding-top: 20px;
     text-transform: uppercase;
 }
-section div.box-fild *{
+
+section div.box-fild * {
     display: block;
     width: 90%;
     height: 50px;
@@ -453,8 +500,9 @@ section div.box-fild *{
 }
 
 
-section div.box-fild input , section div.box-fild select{
-    border:1px solid #aaa;
+section div.box-fild input,
+section div.box-fild select {
+    border: 1px solid #aaa;
 }
 
 
@@ -462,33 +510,277 @@ section div.box-fild input , section div.box-fild select{
 /*-------------------------------------*/
 /* DARK BOX */
 /*-------------------------------------*/
-#dark-section{
+#dark-section {
     min-height: 200px;
     background-image: url('../img/laptopbg.jpg');
     background-position: 100px center;
     color: #fff
 }
-section div.dark-box{
+
+section div.dark-box {
     display: flex;
 }
-section div.box-txt , section .dark-box-button{
+
+section div.box-txt,
+section .dark-box-button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-/*        border: 1px solid red;*/
+    /*        border: 1px solid red;*/
     height: 200px;
-    padding:  0 10px
-
+    padding: 0 10px
 }
-section div.box-txt h4{
-/*    border: 1px solid red;*/
+
+section div.box-txt h4 {
+    /*    border: 1px solid red;*/
     text-transform: capitalize;
 }
-section div.box-txt p{
-/*    border: 1px solid red;*/
+
+section div.box-txt p {
+    /*    border: 1px solid red;*/
     font-size: 12px
 }
 
+/*-------------------------------------------------*/
+/*  our services*/
+/*-------------------------------------------------*/
+
+#our-services {
+    padding: 150px 0;
 
 
+}
 
+#our-services p {
+    color: #666;
+    line-height: 1.8
+}
+
+/*
+#our-services .container *{
+    border: 1px solid red
+}
+*/
+.services-header {
+    text-align: center;
+    padding: 10px 0;
+    text-transform: capitalize
+}
+
+.services-header h2 {
+    font-weight: bold
+}
+
+.item-header .i,
+.item-header h4 {
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 30px;
+    line-height: 30px;
+    ;
+    margin: 20px 0
+}
+
+.item-header .fa {
+    margin-right: 20px;
+    margin-top: 5px;
+    font-size: 30px;
+    color: rgb(27, 226, 166)
+}
+
+.services-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+
+
+.services-items {
+
+
+    /*       border: 1px solid red;*/
+    flex-basis: 31%
+}
+
+.services-btn {
+    margin: 30px 0;
+    text-align: center
+}
+
+/*mobile version */
+@media screen and (max-width:768px) {
+    .services-content {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:996px) {
+    .services-items {
+        flex-basis: 49%;
+
+    }
+}
+
+
+/*-------------------------------------------------*/
+/* CONTACT US*/
+/*-------------------------------------------------*/
+
+#contact-us {
+    min-height: 500px;
+
+    background-image: linear-gradient(#6150506b, #080808bf), url('../img/contact-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+
+
+}
+
+.contact-content {
+    display: flex;
+    /*    border: 1px solid green;*/
+    justify-content: space-between;
+
+}
+
+.contact-box {
+    flex-basis: 30%;
+
+
+    min-height: 350px;
+    /*    border: 1px solid red;*/
+    margin-bottom: 20px
+}
+
+.contact-box:last-child {
+    background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+.contact-box h4 {
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.contact-box:first-child h4 {
+    text-transform: uppercase
+}
+
+.contact-box p {
+    line-height: 2;
+
+}
+
+.contact-box .row1 {
+    display: flex;
+    /*    border: 1px solid yellow;*/
+    justify-content: space-between
+}
+
+.contact-box input.input {
+    /*    display: block;*/
+    flex-basis: 48%;
+    background-color: rgba(171, 154, 154, 0.6);
+    height: 40px;
+    margin-bottom: 20px;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 12px;
+}
+.contact-box input.input:last-child{
+    
+}
+
+.contact-box input[type=submit] {
+    width: 50%;
+}
+
+.contact-box textarea {
+
+    padding: 5px;
+    display: block;
+    width: 100%;
+    resize: none;
+    background-color: rgba(171, 154, 154, 0.6);
+    margin-bottom: 20px;
+    color: #fff;
+    line-height: 90px
+}
+
+.social-contact {
+    display: flex;
+    justify-content: space-around
+}
+
+.social-contact .fa {
+    font-size: 40px;
+    margin-top: 40px
+}
+
+#work-time {}
+
+.time-work {
+    display: flex;
+    justify-content: space-between;
+    min-height: 40px;
+    border-bottom: 1px solid #ccc
+}
+
+.time-work p {
+    margin-left: 30px;
+    margin-bottom: 0;
+    line-height: 40px;
+}
+
+.time-work small {
+    display: block;
+    line-height: 40px;
+    margin-right: 30px
+}
+
+@media screen and (max-width:996px) {
+    #contact-us {
+        padding: 40px 0;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+}
+/*-------------------------------------------------*/
+/* footer*/
+/*-------------------------------------------------*/
+footer{
+    height: 70px;
+    text-align: center;
+    color: #bbb;
+   background-color:  rgba(0, 0, 0, 0.5);
+    line-height: 70px;
+    margin-top: 90px;
+    font-size: 13px;
+    text-shadow: 0 0 2px #fff;
+    word-spacing: 1.5px
+    
+    
+}
+footer i{
+    margin-left: 40px;
+}
+footer .fa{
+    font-size: 30px
+}
+/*mobile*/
+@media screen and (max-width:998px){
+    footer{
+            margin-bottom: -40px;
+
+    }
+}
